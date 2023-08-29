@@ -113,7 +113,7 @@ SourceTracker2 is Python 3 software. The easiest way to install it is using Anac
 To install SourceTracker 2 using Anaconda, run the following commands:
 
 ```bash
-conda create -n st2 -c biocore python=3.5 numpy scipy scikit-bio biom-format h5py hdf5 seaborn
+conda create -n st2 -c conda-forge python=3.8 numpy scipy scikit-bio h5py hdf5 seaborn biom-format
 conda activate st2
 pip install sourcetracker
 ```
