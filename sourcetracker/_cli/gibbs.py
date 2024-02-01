@@ -154,7 +154,7 @@ def gibbs(table_fp: Table,
     os.mkdir(output_dir)
 
     # Load the metadata file and feature table.
-    sample_metadata = parse_sample_metadata(open(mapping_fp, 'U'))
+    sample_metadata = parse_sample_metadata(open(mapping_fp, 'r'))
     feature_table = biom_to_df(load_table(table_fp))
 
     # run the gibbs sampler helper function (same used for q2)
